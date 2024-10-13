@@ -1,0 +1,280 @@
+
+/* Home Component Styles */
+.app__home {
+  height: 130vh; /* Retain height for the home section */
+  background: var(--primary-color);
+  padding: 20px; /* Adjusted padding */
+  position: relative;
+  z-index: 1; /* Ensure this is above other content if needed */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center; /* Center horizontally */
+}
+
+/* Home Text Styles */
+.home__text {
+  text-align: center;
+  margin-bottom: 50px; /* Reduced margin to decrease gap below title */
+}
+
+.home__text h1 {
+  font-weight: bold;
+  background-image: var(--text-gradient);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+  font-size: 2.4rem; /* Reduced font size */
+  margin-top: 100px; /* Increased margin-top to move the heading further down */
+  margin-bottom: 30px; /* Adjust margin-bottom to reduce space below the title */
+}
+
+/* Ticks Container Styles */
+.ticks__container {
+  display: flex;
+  flex-direction: row; /* Adjust to row to align items horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom: 70px; /* Add margin to separate from content below */
+  color: var(--secondary-color);
+  gap: var(--lg-gap);
+}
+
+.ticks__container p {
+  display: flex;
+  align-items: center;
+  gap: var(--t-gap);
+  color: var(--neutral-color);
+}
+
+.ticks__container p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+
+/* Scroll Down Icon Styles */
+.scroll__down {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.scroll__down a {
+  color: var(--neutral-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.scroll__down a:hover {
+  color: var(--secondary-color);
+}
+
+/* Feature Section Styles */
+.feature-section {
+  position: relative;
+  z-index: 1; /* Ensure this is above other content if needed */
+  padding: 50px 0; /* Add padding to separate from content above and below */
+}
+
+
+/* Navbar container styling */
+.app__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 1rem; /* Adjusted padding for consistency */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+  color: white; /* Set default text color to white */
+  z-index: 2;
+}
+
+/* Navbar background for active state */
+.app__navbar.active {
+  background: rgba(255, 255, 255, 0.8); /* Light background with opacity */
+  backdrop-filter: blur(14px); /* Blur effect for active state */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Logo styling */
+.navbar__logo {
+  flex: 1; /* Take up remaining space on the left */
+}
+
+.navbar__logo img {
+  height: 50px; /* Set logo height */
+}
+
+/* Navbar routes styling */
+.navbar__routes {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem; /* Gap between links */
+  flex: 2; /* Take up space in the center */
+}
+
+.navbar__routes a,
+.navbar__routes .navbar__button-link {
+  color: white; /* Default text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 0.5rem 1.5rem; /* Padding for spacing */
+  border-radius: 20px; /* Rounded corners */
+  border: 2px solid transparent; /* Transparent border for hover effect */
+  font-size: 1rem; /* Font size for consistency */
+  font-weight: bold; /* Bold text */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar__routes a:hover,
+.navbar__routes .navbar__button-link:hover {
+  background: var(--secondary-color); /* Background on hover */
+  color: white; /* Text color on hover */
+}
+
+/* Text color when clicked/active */
+.navbar__routes a:active,
+.navbar__routes .navbar__button-link:active {
+  color: black; /* Text color when active or clicked */
+}
+
+/* Button-specific styles */
+.navbar__routes .navbar__button-link {
+  background: var(--secondary-color); /* Set button background */
+  color: white; /* Set button text color */
+}
+
+.navbar__routes .navbar__button-link.active {
+  color: black; /* Text color when active */
+  background: white; /* Background color when active */
+}
+
+/* Navbar buttons styling */
+.navbar__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Gap between buttons */
+  margin-left: 0; /* Align buttons to the left */
+  flex: 1; /* Take up remaining space on the right */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.navbar__buttons button {
+  padding: 0 1.5rem; /* Adjusted padding */
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  background: var(--secondary-color); /* Button background */
+  color: white; /* Button text color */
+  font-weight: bold;
+}
+
+.navbar__buttons button.onebtn {
+  background: transparent; /* Transparent background for specific button */
+  color: white; /* Ensure button text is white */
+}
+
+
+
+
+
+.app__feature {
+  background: var(--primary-color); /* Replace with the actual value of $primary-color */
+  padding: var(--md-gap) var(--md-gap) 20% var(--md-gap); /* Replace with the actual values of $md-gap */
+  position: relative;
+}
+
+.app__feature .feature__container {
+  display: flex; /* Assuming flexAlign mixin includes display: flex; align-items: center; justify-content: center; */
+  align-items: center; /* Adjust based on your flexAlign mixin */
+  justify-content: center; /* Adjust based on your flexAlign mixin */
+  gap: var(--lg-gap); /* Replace with the actual value of $lg-gap */
+}
+
+.app__feature .feature__container .left__feature {
+  flex: 1;
+}
+
+.app__feature .feature__container .left__feature img {
+  width: 80%;
+}
+
+.app__feature .feature__container .right__feature {
+  flex: 1;
+  gap: var(--lg-gap); /* Replace with the actual value of $lg-gap */
+  display: flex; /* Assuming flexDirection mixin includes display: flex; flex-direction: column; */
+  flex-direction: column; /* Adjust based on your flexDirection mixin */
+}
+
+.app__feature .feature__container .right__feature .right__text {
+  gap: var(--lg-gap); /* Replace with the actual value of $lg-gap */
+  display: flex; /* Assuming flexDirection mixin includes display: flex; flex-direction: column; */
+  flex-direction: column; /* Adjust based on your flexDirection mixin */
+}
+
+.app__feature .feature__container .right__feature .right__text h1 {
+  font-size: 4rem;
+  color: var(--secondary-color); /* Replace with the actual value of $secondary-color */
+}
+
+.app__feature .feature__container .right__feature .right__text p {
+  font-size: 1.3rem;
+  color: var(--neutral-color); /* Replace with the actual value of $neutral-color */
+}
+
+.app__feature .feature__container .right__feature .feature__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--lg-gap); /* Replace with the actual value of $lg-gap */
+}
+
+.app__feature .feature__container .right__feature .feature__content .feature {
+  display: flex; /* Assuming flexRow mixin includes display: flex; flex-direction: row; */
+  flex-direction: row; /* Adjust based on your flexRow mixin */
+  gap: var(--sm-gap); /* Replace with the actual value of $sm-gap */
+}
+
+.app__feature .feature__container .right__feature .feature__content .feature svg {
+  height: 20px;
+  min-width: 20px;
+  border-radius: 5px;
+  background: var(--elementary-color); /* Replace with the actual value of $elementary-color */
+}
+
+.app__feature .feature__container .right__feature .feature__content .feature .feature__text p {
+  color: var(--secondary-color); /* Replace with the actual value of $secondary-color */
+  font-weight: bold;
+}
+
+.app__feature .feature__container .right__feature .feature__content .feature .feature__text span {
+  color: var(--neutral-color); /* Replace with the actual value of $neutral-color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

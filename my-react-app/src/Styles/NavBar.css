@@ -1,0 +1,105 @@
+@import url('./variable.css');
+@import url('./constant.css');
+
+/* Navbar container styling */
+.app__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 1rem; /* Adjusted padding for consistency */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+  color: white; /* Set default text color to white */
+  z-index: 2;
+}
+
+/* Navbar background for active state */
+.app__navbar.active {
+  background: rgba(255, 255, 255, 0.8); /* Light background with opacity */
+  backdrop-filter: blur(14px); /* Blur effect for active state */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Logo styling */
+.navbar__logo {
+  flex: 1; /* Take up remaining space on the left */
+}
+
+.navbar__logo img {
+  height: 50px; /* Set logo height */
+}
+
+/* Navbar routes styling */
+.navbar__routes {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem; /* Gap between links */
+  flex: 2; /* Take up space in the center */
+}
+
+.navbar__routes a,
+.navbar__routes .navbar__button-link {
+  color: white; /* Default text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 0.5rem 1.5rem; /* Padding for spacing */
+  border-radius: 20px; /* Rounded corners */
+  border: 2px solid transparent; /* Transparent border for hover effect */
+  font-size: 1rem; /* Font size for consistency */
+  font-weight: bold; /* Bold text */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar__routes a:hover,
+.navbar__routes .navbar__button-link:hover {
+  background: var(--secondary-color); /* Background on hover */
+  color: white; /* Text color on hover */
+}
+
+/* Text color when clicked/active */
+.navbar__routes a:active,
+.navbar__routes .navbar__button-link:active {
+  color: black; /* Text color when active or clicked */
+}
+
+/* Button-specific styles */
+.navbar__routes .navbar__button-link {
+  background: var(--secondary-color); /* Set button background */
+  color: white; /* Set button text color */
+}
+
+.navbar__routes .navbar__button-link.active {
+  color: black; /* Text color when active */
+  background: white; /* Background color when active */
+}
+
+/* Navbar buttons styling */
+.navbar__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Gap between buttons */
+  margin-left: 0; /* Align buttons to the left */
+  flex: 1; /* Take up remaining space on the right */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.navbar__buttons button {
+  padding: 0 1.5rem; /* Adjusted padding */
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  background: var(--secondary-color); /* Button background */
+  color: white; /* Button text color */
+  font-weight: bold;
+}
+
+.navbar__buttons button.onebtn {
+  background: transparent; /* Transparent background for specific button */
+  color: white; /* Ensure button text is white */
+}

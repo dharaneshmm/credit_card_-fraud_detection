@@ -1,0 +1,123 @@
+/* Flex Center */
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flex Row */
+.flexRow {
+  display: flex;
+}
+
+/* Flex Align */
+.flexAlign {
+  display: flex;
+  align-items: center;
+}
+
+/* Flex Direction */
+.flexDirection {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex Between */
+.flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Button */
+.button {
+  padding: 0 2rem;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  background: none;
+  font-weight: bold;
+}
+
+/* Routes */
+.routes {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.routes li {
+  cursor: pointer;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Input */
+.input {
+  flex: 1;
+  color: #000; /* Replace with your $neutral-color */
+  padding: 0 2rem;
+  border: none;
+  height: 40px;
+  outline: none;
+  background: none;
+  font-weight: bold;
+}
+
+/* Input Container */
+.inputContainer {
+  width: 35%;
+  align-self: center;
+  padding: 0.2rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Replace with your $t-gap */
+  border: 1px solid #ccc; /* Replace with your $border */
+}
+
+.inputContainer .input {
+  flex: 1;
+  color: #000; /* Replace with your $neutral-color */
+  padding: 0 2rem;
+  border: none;
+  height: 40px;
+  outline: none;
+  background: none;
+  font-weight: bold;
+}
+
+.inputContainer button {
+  padding: 0 2rem;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  background: none;
+  font-weight: bold;
+}
+
+/* Text Gradient */
+.textGradient {
+  font-weight: bold;
+  background-image: linear-gradient(to right, #f00, #00f); /* Replace with your $text-gradient */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

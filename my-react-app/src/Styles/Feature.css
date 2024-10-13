@@ -1,0 +1,74 @@
+@import url('./variable.css');
+@import url('./constant.css');
+
+.app__feature {
+  background: var(--primary-color); /* Replace with the actual value of $primary-color */
+  padding: var(--md-gap) var(--md-gap) 20% var(--md-gap); /* Replace with the actual values of $md-gap */
+  position: relative;
+}
+
+.app__feature .feature__container {
+  display: flex; /* Assuming flexAlign mixin includes display: flex; align-items: center; justify-content: center; */
+  align-items: center; /* Adjust based on your flexAlign mixin */
+  justify-content: center; /* Adjust based on your flexAlign mixin */
+  gap: var(--lg-gap); /* Replace with the actual value of $lg-gap */
+}
+
+.app__feature .feature__container .left__feature {
+  flex: 1;
+}
+
+.app__feature .feature__container .left__feature img {
+  width: 80%;
+}
+
+.app__feature .feature__container .right__feature {
+  flex: 1;
+  gap: var(--lg-gap); /* Replace with the actual value of $lg-gap */
+  display: flex; /* Assuming flexDirection mixin includes display: flex; flex-direction: column; */
+  flex-direction: column; /* Adjust based on your flexDirection mixin */
+}
+
+.app__feature .feature__container .right__feature .right__text {
+  gap: var(--lg-gap); /* Replace with the actual value of $lg-gap */
+  display: flex; /* Assuming flexDirection mixin includes display: flex; flex-direction: column; */
+  flex-direction: column; /* Adjust based on your flexDirection mixin */
+}
+
+.app__feature .feature__container .right__feature .right__text h1 {
+  font-size: 4rem;
+  color: var(--secondary-color); /* Replace with the actual value of $secondary-color */
+}
+
+.app__feature .feature__container .right__feature .right__text p {
+  font-size: 1.3rem;
+  color: var(--neutral-color); /* Replace with the actual value of $neutral-color */
+}
+
+.app__feature .feature__container .right__feature .feature__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--lg-gap); /* Replace with the actual value of $lg-gap */
+}
+
+.app__feature .feature__container .right__feature .feature__content .feature {
+  display: flex; /* Assuming flexRow mixin includes display: flex; flex-direction: row; */
+  flex-direction: row; /* Adjust based on your flexRow mixin */
+  gap: var(--sm-gap); /* Replace with the actual value of $sm-gap */
+}
+
+.app__feature .feature__container .right__feature .feature__content .feature svg {
+  height: 20px;
+  min-width: 20px;
+  border-radius: 5px;
+  background: var(--elementary-color); /* Replace with the actual value of $elementary-color */
+}
+
+.app__feature .feature__container .right__feature .feature__content .feature .feature__text p {
+  color: var(--secondary-color); /* Replace with the actual value of $secondary-color */
+  font-weight: bold;
+}
+
+.app__feature .feature__container .right__feature .feature__content .feature .feature__text span {
+  color: var(--neutral-color); /* Replace with the actual value of $neutral-color */
+}

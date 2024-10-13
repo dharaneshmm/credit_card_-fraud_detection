@@ -1,0 +1,210 @@
+/* Set the background color for the entire page, including the header */
+body, html {
+  background-color: #001f3f; /* Dark blue */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure the header is also covered by the dark blue background */
+header {
+  background-color: #001f3f;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Title */
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Analysis Page container */
+.analysis-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../Images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: 80px; /* Adjust if header height changes */
+  color: white; /* Set all text color within the container to white */
+}
+
+/* Title and File Upload Section */
+.title-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.title-upload-container h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.upload-field {
+  margin-bottom: 2rem;
+}
+
+.upload-field input[type="file"] {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
+/* Data Preview Section */
+.data-preview-section {
+  width: 100%;
+  max-width: 1200px; /* Adjust for wider previews if needed */
+  background-color: #333; /* Dark background to ensure white text stands out */
+  color: white; /* Ensure all text is white */
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+}
+
+.data-preview-section h4 {
+  margin-bottom: 1rem;
+}
+
+/* Data Preview Table */
+.data-preview-table {
+  width: 100%; /* Make the table take full width */
+  max-height: 400px; /* Increase height for better visibility */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border-collapse: collapse; /* Ensures consistent cell borders */
+}
+
+.data-preview-table table {
+  width: 100%; /* Ensure table takes full container width */
+  border-collapse: collapse; /* Consistent cell borders */
+  table-layout: fixed; /* Ensures equal column width */
+}
+
+/* Style table header and cells */
+.data-preview-table th, .data-preview-table td {
+  border: 1px solid #dee2e6; /* Light gray border for cells */
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping in cells */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis to overflowing text */
+}
+
+/* Increase column width for better visibility */
+.data-preview-table th, .data-preview-table td {
+  width: 80px; /* Adjust as needed */
+}
+
+.data-preview-table th {
+  background-color: #555; /* Darker background for table headers */
+  font-weight: bold;
+}
+
+.data-preview-table td {
+  font-size: 0.9rem; /* Smaller font for better fit */
+}
+
+/* Form styling */
+.form-control {
+  border-radius: 7px;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  width: auto; /* Auto width to fit content */
+  margin-top: 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Clear Button Styling */
+.btn-clear {
+  background-color: #dc3545; /* Red color for the clear button */
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2rem; /* Space above the button */
+}
+
+.btn-clear:hover {
+  background-color: #c82333; /* Darker red for hover effect */
+}
+
+/* Title styling */
+h1 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Alert styling */
+.alert {
+  margin-top: 1.5rem;
+  color: white; /* White text color */
+  background-color: #dc3545; /* Red background for alerts */
+  border-color: #dc3545; /* Matching border color for alerts */
+}
+
+/* Spinner styling */
+.spinner-border {
+  color: #007bff;
+}
+
+/* Text styling */
+p {
+  margin-top: 1.5rem;
+  color: white; /* White text color */
+}
+
+/* Chart styling */
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* Scrollbar Styling */
+.data-preview-table::-webkit-scrollbar {
+  width: 8px;
+}
+
+.data-preview-table::-webkit-scrollbar-track {
+  background-color: #333; /* Dark background for scrollbar track */
+}
+
+.data-preview-table::-webkit-scrollbar-thumb {
+  background-color: #555; /* Darker background for scrollbar thumb */
+  border-radius: 5px;
+}

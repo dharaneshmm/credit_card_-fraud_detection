@@ -1,0 +1,192 @@
+/* Set the background color for the entire page, including the header */
+body, html {
+  background-color: #001f3f; /* Dark blue */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure the header is also covered by the dark blue background */
+header {
+  background-color: #001f3f; /* Dark blue */
+  position: fixed; /* Keeps header fixed at the top */
+  z-index: 1000; /* Ensures it stays above other content */
+  width: 100%; /* Full width */
+  padding: 10px 20px; /* Padding around header content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Header Title */
+header h1 {
+  margin: 0; /* Removes default margin */
+  font-size: 1.5rem; /* Size of header text */
+  color: white; /* White text color */
+}
+
+/* Prediction Page container */
+.prediction-container {
+  background-image: url('../Images/bg.jpg'); /* Background image */
+  background-size: cover; /* Covers the entire container */
+  background-attachment: fixed; /* Keeps the background fixed */
+  background-position: center; /* Centers the image */
+  min-height: 100vh; /* Minimum height of the container */
+  padding: 2rem 0; /* Vertical padding */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center align items */
+  justify-content: flex-start; /* Start from the top */
+  color: white; /* White text color */
+  margin-top: 80px; /* Adjust for header height */
+}
+
+/* Title styles */
+h1.text-center {
+  margin-bottom: 2rem; /* Space below title */
+  color: white; /* White text */
+  text-align: center; /* Center align text */
+}
+
+/* File Upload Section */
+.file-upload-container {
+  margin-bottom: 2rem; /* Space below file upload section */
+  text-align: center; /* Center align text */
+  position: relative; /* Relative positioning for inner elements */
+  height: 3rem; /* Fixed height to prevent resizing */
+}
+
+.file-upload-container strong {
+  position: absolute; /* Absolute positioning for centering */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center text */
+  font-size: 1.2rem; /* Text size */
+  line-height: 1.5; /* Line height for vertical centering */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Button styles */
+.button-container {
+  display: flex; /* Flexbox for button layout */
+  justify-content: center; /* Center align buttons */
+  margin-bottom: 2rem; /* Space below buttons */
+}
+
+/* Primary Button styles */
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border-color: #007bff; /* Button border color */
+  color: white; /* White text */
+  border-radius: 0.25rem; /* Rounded corners */
+  padding: 0.5rem 1.5rem; /* Padding inside button */
+  font-size: 1rem; /* Font size */
+  margin: 0.5rem; /* Space around button */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #004085; /* Darker border on hover */
+}
+
+/* Clear Button styles */
+.btn-clear {
+  background-color: blue; /* Clear button color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 0.75rem 2rem; /* Padding inside button */
+  font-size: 1.25rem; /* Font size */
+  margin: 2rem auto 0; /* Space above button */
+  display: block; /* Block display for centering */
+}
+
+.btn-clear:hover {
+  background-color: darkblue; /* Darker blue on hover */
+}
+
+/* Spinner styles */
+.spinner-container {
+  display: flex; /* Flexbox for spinner layout */
+  justify-content: center; /* Center align spinner */
+  width: 100%; /* Full width */
+  margin: 2rem 0; /* Space above and below spinner */
+}
+
+/* Table Container styles */
+.table-container {
+  width: 60%; /* Width of table container */
+  margin: 2rem auto; /* Center align */
+  padding: 0 1rem; /* Horizontal padding */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center align */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Smaller Table */
+.table {
+  color: white; /* White text */
+  border-collapse: collapse; /* Collapses borders */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center align */
+  font-size: 0.9rem; /* Font size */
+}
+
+.table th, .table td {
+  padding: 0.5rem; /* Padding inside cells */
+  vertical-align: middle; /* Center align content */
+  text-align: center; /* Center align content */
+  width: 50%; /* Equal width for cells */
+}
+
+.table th:nth-child(1),
+.table td:nth-child(1),
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 50%; /* Equal width for both fields */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #343a40; /* Darker background for odd rows */
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6; /* Light gray border */
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid #dee2e6; /* Light gray border */
+}
+
+/* Alert styles */
+.alert {
+  margin-top: 1rem; /* Space above alerts */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1.text-center {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .btn-primary, .btn-clear {
+    width: 100%; /* Full width for buttons */
+  }
+
+  .table-container {
+    width: 90%; /* Reduced width for responsiveness */
+    padding: 0 1rem; /* Horizontal padding */
+  }
+
+  .table {
+    font-size: 0.75rem; /* Smaller font size */
+  }
+
+  .table th, .table td {
+    padding: 0.2rem; /* Reduced padding */
+  }
+}

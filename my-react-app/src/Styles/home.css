@@ -1,0 +1,77 @@
+@import url('./variable.css');
+@import url('./constant.css');
+
+
+/* Home Text Styles */
+.home__text {
+  text-align: center;
+  margin-bottom: 50px; /* Reduced margin to decrease gap below title */
+}
+
+.home__text h1 {
+  font-weight: bold;
+  background-image: var(--text-gradient);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+  font-size: 2.4rem; /* Reduced font size */
+  margin-top: 100px; /* Increased margin-top to move the heading further down */
+  margin-bottom: 30px; /* Adjust margin-bottom to reduce space below the title */
+}
+
+/* Ticks Container Styles */
+.ticks__container {
+  display: flex;
+  flex-direction: row; /* Adjust to row to align items horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom: 70px; /* Add margin to separate from content below */
+  color: var(--secondary-color);
+  gap: var(--lg-gap);
+}
+
+.ticks__container p {
+  display: flex;
+  align-items: center;
+  gap: var(--t-gap);
+  color: var(--neutral-color);
+}
+
+.ticks__container p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+
+/* Scroll Down Icon Styles */
+.scroll__down {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.scroll__down a {
+  color: var(--neutral-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.scroll__down a:hover {
+  color: var(--secondary-color);
+}
+
+/* Feature Section Styles */
+.feature-section {
+  position: relative;
+  z-index: 1; /* Ensure this is above other content if needed */
+  padding: 50px 0; /* Add padding to separate from content above and below */
+}
